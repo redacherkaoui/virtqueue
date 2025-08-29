@@ -17,7 +17,7 @@ This repository contains a working exploit targeting VirtIO queue management via
 
 ---
 
-## 🔍 Exploitation Flow
+##  Exploitation Flow
 
 1. **Descriptor Chain Construction**
    - Head: 512 bytes, `NEXT | WRITE`
@@ -41,7 +41,7 @@ This repository contains a working exploit targeting VirtIO queue management via
 
 ---
 
-## 🧠 Exploit Interpretation
+##  Exploit Interpretation
 
 This exploit demonstrates corruption of VirtIO’s internal queue bookkeeping. The device fails to validate descriptor chain boundaries, leading to overwrite of its own `used` ring structure. While host compromise is not confirmed, the exploit achieves:
 
@@ -51,7 +51,7 @@ This exploit demonstrates corruption of VirtIO’s internal queue bookkeeping. T
 
 ---
 
-## 📉 Limitations
+##  Limitations
 
 - No confirmed host DMA faults
 - No KASAN/UBSAN splats
@@ -78,7 +78,7 @@ This exploit demonstrates corruption of VirtIO’s internal queue bookkeeping. T
 
 ---
 
-## ⚠ Disclaimer
+##  Disclaimer
 
 This exploit is released for research and educational purposes only. Use responsibly and only in controlled environments.
 
